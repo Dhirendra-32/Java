@@ -11,7 +11,11 @@ Output: 1 or 5
 Output explanation: Your function can return either index number 1 where the peak element is 2, or index number 5 where the peak element is 6.
 =========================================
 basic method  (more description in the code).
+<<<<<<< HEAD
     Time Complexity:    O(N)
+=======
+    Time Complexity:    O(LogN)
+>>>>>>> 1def06003e3252c67cf31f3e73beaeb5b4a45ae0
     Space Complexity:   O(1)*/
 
 package Arrays.Easy;
