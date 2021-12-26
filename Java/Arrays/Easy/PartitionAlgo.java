@@ -10,18 +10,17 @@ public class PartitionAlgo {
         for (int j = p+1; j <=q ; j++) {
             if (A[j]<=pivot){
                 i=i+1;
-                swap(A[i],A[j]);
+                swap(A,i,j);
             }
         }
-        swap(A[p],A[i]);
-
+        swap(A,p,i);
         return i;
     }
-    public static void swap(int a , int b){
+    public static void swap(int [] A,int i , int j){
         int temp;
-        temp = a;
-        a = b;
-        b = temp;
+        temp = A[i];
+        A[i] = A[j];
+        A[j] = temp;
     }
     public static void main(String[] args) {
         int[] A = {1, -4, -45, -6, -50, 10, -2};
