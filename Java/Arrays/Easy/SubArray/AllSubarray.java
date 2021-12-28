@@ -19,7 +19,7 @@ public class AllSubarray {
         /*
          *  Program to find out all possible subarray of given array
          *  TC :O(N^3) SC: Constant
-         *  Improvement possibility : Yes, It can be done in N^2 using prefix sum
+         *  Improvement possibility : Yes, It can be done in N^2 using prefix sum but space would o(N)
          */
         for (int i = 0; i < n; i++) {
             for (int j = i; j < n ; j++) {
