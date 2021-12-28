@@ -1,12 +1,11 @@
-/*
-*  Program to find out all possible subarray of given array
-*  TC :O(N^3) SC: Constant
-*  Improvement possibility : NO ,It can't be done below O(N^3)
-*
-*/
 package Arrays.Easy.SubArray;
 public class AllSubarray {
     public static void PrintAllSubArray(int []arr,int n){
+        /*
+         *  Program to find out all possible subarray of given array
+         *  TC :O(N^3) SC: Constant
+         *  Improvement possibility : NO ,It can't be done below O(N^3)
+         */
         for (int k = 0; k < n; k++) {
             for (int l = k; l < n ; l++) {
                 for (int m = k; m <=l; m++) {
@@ -16,9 +15,27 @@ public class AllSubarray {
             }
         }
     }
+    public static void sumAllSubArray(int []arr,int n){
+        /*
+         *  Program to find out all possible subarray of given array
+         *  TC :O(N^3) SC: Constant
+         *  Improvement possibility : Yes, It can be done in N^2 using prefix sum
+         */
+        for (int i = 0; i < n; i++) {
+            for (int j = i; j < n ; j++) {
+                int sum = 0;
+                int k;
+                for ( k = i; k <=j; k++) {
+                    sum = sum+arr[k];
+                }
+                System.out.println("Index "+(i)+" to "+ (j) +" SUM => "+sum);
+            }
+        }
+    }
     public static void main(String[] args) {
-        int[] arr = { 15, 2, 4, 8, 9, 5, 10, 23 };
+        int[] arr = { 1,2,3,4 };
         int n = arr.length;
-        PrintAllSubArray(arr,n);
+        //PrintAllSubArray(arr,n);
+        sumAllSubArray(arr,n);
     }
 }

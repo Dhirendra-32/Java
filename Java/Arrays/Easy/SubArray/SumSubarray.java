@@ -7,7 +7,7 @@ public class SumSubarray {
             int count = 0 ;
             for (int j = i; j < n; j++) {
                 total_sum=total_sum+arr[j];
-                count++;
+                count++;        
                 System.out.print(total_sum +" ");
             }
             System.out.print("Count->"+count);
