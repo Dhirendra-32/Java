@@ -25,7 +25,6 @@ public class maxSubArrayEasy {
         }
         return ans;
     }
-
     public static void main(String[] args) {
         int[] arr = { 2, 2, 2};
         int B = 1;
