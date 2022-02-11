@@ -51,7 +51,7 @@ public class segrigate0And1 {
         }
     }
     public static void main(String[] args) {
-        int [] arr = {0,0,0,0,0,0,0,0,0,0,0};
+        int [] arr = {0,0,0,0,0,0,0,1,0,0,0};
         int len = arr.length;
         //Separate(arr,len);
         SeparateSecond(arr,len);

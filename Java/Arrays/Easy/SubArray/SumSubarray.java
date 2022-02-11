@@ -1,6 +1,6 @@
 package Arrays.Easy.SubArray;
 public class SumSubarray {
-    public static void findSumSubArray(int arr[] ,int n,int p){
+    public static void findSumSubArray(int[] arr, int n, int p){
 
         for (int i = 0; i <n; i++) {
             int total_sum=0;
@@ -16,7 +16,7 @@ public class SumSubarray {
         }
     }
     public static void main(String[] args) {
-        int arr[] = { 15, 2, 4, 8, 9, 5, 10, 23 };
+        int[] arr = { 15, 2, 4, 8, 9, 5, 10, 23 };
         int n = arr.length;
         int sum = 23;
         findSumSubArray(arr,n,sum);

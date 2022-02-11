@@ -19,6 +19,7 @@ public class SubArrayMaxSumSizeK {
             System.out.println(j+" "+i+" "+ (j-i+1));
             if(j-i+1==k){
                 maxSum = Math.max(currSum,maxSum);
+                /*Similar approach would be for minimum sum subarray of size K */
                 j++;
                 if(j<=n-1) {
                     currSum = currSum + arr[j] - arr[i];
@@ -32,7 +33,7 @@ public class SubArrayMaxSumSizeK {
         return maxSum;
     }
     public static void main(String[] args) {
-        int arr[]={2,5};
+        int arr[]={2,5,3,7,3,8,9,2,4,6};
         int n = arr.length;
         int k = 2;
         System.out.println(MaxSumSubArraySizeK(arr,n,k));
